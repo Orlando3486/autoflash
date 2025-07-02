@@ -1,0 +1,187 @@
+:root {
+  --rojo: #e53935;
+  --gris-oscuro: #212121;
+  --gris-claro: #f4f4f4;
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--gris-claro);
+  color: var(--gris-oscuro);
+}
+
+header {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-categorias {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-categorias a {
+  text-decoration: none;
+  color: var(--gris-oscuro);
+  font-weight: bold;
+  border: 2px solid var(--rojo);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.menu-categorias a:hover {
+  background-color: var(--rojo);
+  color: white;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--rojo);
+  margin: 0;
+}
+
+.slogan {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--blanco);
+}
+
+main {
+  padding: 2rem;
+}
+
+.destacados h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  color: var(--gris-oscuro);
+}
+
+.tarjeta p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.whatsapp {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.whatsapp:hover {
+  background-color: #c62828;
+}
+
+footer {
+  background-color: var(--gris-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.carrito {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 2px solid var(--rojo);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.carrito h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.carrito ul li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.oculto {
+  display: none;
+}
+
+#vaciar-carrito,
+#finalizar-compra {
+  margin-top: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  background: var(--rojo);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.boton-carrito {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--rojo);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.boton-carrito:hover {
+  background-color: #c62828;
+}
+
+#vaciar-carrito:hover {
+  background-color: #c62828;
+}
+
+#finalizar-compra:hover {
+  background-color: #c62828;
+}

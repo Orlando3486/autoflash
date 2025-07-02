@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoFlash | Accesorios para tu Auto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">AutoFlash</h1>
+      <p class="slogan">Accesorios para tu auto, en un flash</p>
+      <nav class="menu-categorias">
+        <a href="#limpieza">Limpieza</a>
+        <a href="#interior">Interior</a>
+        <a href="#iluminacion">Iluminación</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#electronica">Electrónica</a>
+        <a href="#otros">Otros</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="destacados">
+        <h2>Productos Destacados</h2>
+        <div class="tarjetas" id="productos"></div>
+      </section>
+
+      <section class="contacto">
+        <a
+          class="whatsapp"
+          href="https://wa.me/5491120202020?text=Hola%2C%20quiero%20consultar%20por%20un%20producto%20de%20AutoFlash"
+          target="_blank">
+          ¡Hacé tu pedido por WhatsApp!
+        </a>
+      </section>
+      <section id="limpieza">
+        <h2>Limpieza y Cuidado</h2>
+        <div class="tarjetas" id="grupo-limpieza"></div>
+      </section>
+
+      <section id="interior">
+        <h2>Interior del Auto</h2>
+        <div class="tarjetas" id="grupo-interior"></div>
+      </section>
+
+      <section id="iluminacion">
+        <h2>Iluminación</h2>
+        <div class="tarjetas" id="grupo-iluminacion"></div>
+      </section>
+
+      <section id="seguridad">
+        <h2>Herramientas y Seguridad</h2>
+        <div class="tarjetas" id="grupo-seguridad"></div>
+      </section>
+
+      <section id="electronica">
+        <h2>Electrónica / Gadgets</h2>
+        <div class="tarjetas" id="grupo-electronica"></div>
+      </section>
+
+      <section id="otros">
+        <h2>Otros Accesorios</h2>
+        <div class="tarjetas" id="grupo-otros"></div>
+      </section>
+      <div id="carrito" class="carrito oculto">
+        <h3>🛒 Tu carrito</h3>
+        <ul id="lista-carrito"></ul>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+        <button id="finalizar-compra">Finalizar compra</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AutoFlash - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
